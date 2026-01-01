@@ -1,0 +1,44 @@
+# Hello world, TOML edition: a tour of the syntax.
+title = "Hello, world"
+enabled = true
+ratio = 3.14
+count = 1_000
+hex = 0xDEADBEEF
+inf = inf
+released = 2026-01-01T12:00:00Z
+day = 2026-01-01
+time = 07:32:00
+
+[owner]
+name = "Samisdat"
+langs = ["en", "de", "fr"]
+
+[database]
+server = "192.168.1.1"
+ports = [8000, 8001, 8002]
+connection = { max = 5000, timeout = 'PT30S' }
+
+[servers.alpha]
+ip = "10.0.0.1"
+role = "frontend"
+
+[servers.beta]
+ip = "10.0.0.2"
+role = "backend"
+
+[[products]]
+name = "Hammer"
+sku = 738594937
+
+[[products]]
+name = "Nail"
+sku = 284758393
+color = "gray"
+
+multi = """
+Roses are red
+Violets are blue"""
+
+literal = '''
+C:\Users\nodejs\templates
+'''
