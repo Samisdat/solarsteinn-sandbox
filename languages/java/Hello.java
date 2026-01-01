@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
  */
 @SuppressWarnings("unused")
 public final class Hello {
-    private static final int MAX = 1_000;
+    private static final int MAX = 10_000;
     private static final String NAME = "world\t\"quoted\"";
 
     sealed interface Shape permits Circle, Square {}
@@ -54,7 +54,7 @@ public final class Hello {
 
     public static void main(String[] args) throws Exception {
         var hello = new Hello("world", "welt");
-        Greeter<String> g = n -> "hello, " + n + "!";
+        Greeter<String> g = n -> "hello, " + n + "!!";
         long big = 123_456_789L;
         char c = '\u00fc';
         String block = """
