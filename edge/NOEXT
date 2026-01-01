@@ -1,0 +1,3 @@
+#!/bin/sh
+# A file without any extension: highlighting must come from the shebang or not at all.
+echo "hello, world"
