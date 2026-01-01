@@ -2,7 +2,7 @@
 
 // A larger JavaScript file for chunking and structure detection.
 
-function compute0(a, b = 0) {
+function calc0(a, b = 0) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -21,7 +21,7 @@ class Node0 {
   }
 }
 
-function compute1(a, b = 1) {
+function calc1(a, b = 1) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -40,7 +40,7 @@ class Node1 {
   }
 }
 
-function compute2(a, b = 2) {
+function calc2(a, b = 2) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -59,7 +59,7 @@ class Node2 {
   }
 }
 
-function compute3(a, b = 3) {
+function calc3(a, b = 3) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -78,7 +78,7 @@ class Node3 {
   }
 }
 
-function compute4(a, b = 4) {
+function calc4(a, b = 4) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -97,7 +97,7 @@ class Node4 {
   }
 }
 
-function compute5(a, b = 5) {
+function calc5(a, b = 5) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -116,7 +116,7 @@ class Node5 {
   }
 }
 
-function compute6(a, b = 6) {
+function calc6(a, b = 6) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -135,7 +135,7 @@ class Node6 {
   }
 }
 
-function compute7(a, b = 7) {
+function calc7(a, b = 7) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -154,7 +154,7 @@ class Node7 {
   }
 }
 
-function compute8(a, b = 8) {
+function calc8(a, b = 8) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -173,7 +173,7 @@ class Node8 {
   }
 }
 
-function compute9(a, b = 9) {
+function calc9(a, b = 9) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -192,7 +192,7 @@ class Node9 {
   }
 }
 
-function compute10(a, b = 10) {
+function calc10(a, b = 10) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -211,7 +211,7 @@ class Node10 {
   }
 }
 
-function compute11(a, b = 11) {
+function calc11(a, b = 11) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -230,7 +230,7 @@ class Node11 {
   }
 }
 
-function compute12(a, b = 12) {
+function calc12(a, b = 12) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -249,7 +249,7 @@ class Node12 {
   }
 }
 
-function compute13(a, b = 13) {
+function calc13(a, b = 13) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -268,7 +268,7 @@ class Node13 {
   }
 }
 
-function compute14(a, b = 14) {
+function calc14(a, b = 14) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -287,7 +287,7 @@ class Node14 {
   }
 }
 
-function compute15(a, b = 15) {
+function calc15(a, b = 15) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -306,7 +306,7 @@ class Node15 {
   }
 }
 
-function compute16(a, b = 16) {
+function calc16(a, b = 16) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -325,7 +325,7 @@ class Node16 {
   }
 }
 
-function compute17(a, b = 17) {
+function calc17(a, b = 17) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -344,7 +344,7 @@ class Node17 {
   }
 }
 
-function compute18(a, b = 18) {
+function calc18(a, b = 18) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -363,7 +363,7 @@ class Node18 {
   }
 }
 
-function compute19(a, b = 19) {
+function calc19(a, b = 19) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -382,7 +382,7 @@ class Node19 {
   }
 }
 
-function compute20(a, b = 20) {
+function calc20(a, b = 20) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -401,7 +401,7 @@ class Node20 {
   }
 }
 
-function compute21(a, b = 21) {
+function calc21(a, b = 21) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -420,7 +420,7 @@ class Node21 {
   }
 }
 
-function compute22(a, b = 22) {
+function calc22(a, b = 22) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -439,7 +439,7 @@ class Node22 {
   }
 }
 
-function compute23(a, b = 23) {
+function calc23(a, b = 23) {
   const sum = a + b;
   if (sum % 2 === 0) {
     return sum / 2;
@@ -459,28 +459,28 @@ class Node23 {
 }
 
 module.exports = {
-  compute0, Node0,
-  compute1, Node1,
-  compute2, Node2,
-  compute3, Node3,
-  compute4, Node4,
-  compute5, Node5,
-  compute6, Node6,
-  compute7, Node7,
-  compute8, Node8,
-  compute9, Node9,
-  compute10, Node10,
-  compute11, Node11,
-  compute12, Node12,
-  compute13, Node13,
-  compute14, Node14,
-  compute15, Node15,
-  compute16, Node16,
-  compute17, Node17,
-  compute18, Node18,
-  compute19, Node19,
-  compute20, Node20,
-  compute21, Node21,
-  compute22, Node22,
-  compute23, Node23,
+  calc0, Node0,
+  calc1, Node1,
+  calc2, Node2,
+  calc3, Node3,
+  calc4, Node4,
+  calc5, Node5,
+  calc6, Node6,
+  calc7, Node7,
+  calc8, Node8,
+  calc9, Node9,
+  calc10, Node10,
+  calc11, Node11,
+  calc12, Node12,
+  calc13, Node13,
+  calc14, Node14,
+  calc15, Node15,
+  calc16, Node16,
+  calc17, Node17,
+  calc18, Node18,
+  calc19, Node19,
+  calc20, Node20,
+  calc21, Node21,
+  calc22, Node22,
+  calc23, Node23,
 };
