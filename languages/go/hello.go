@@ -11,7 +11,7 @@ import (
 )
 
 const (
-	Max     = 1 << 10
+	Max     = 1 << 12
 	Version = "1.0.0"
 )
 
@@ -29,7 +29,7 @@ type Loud struct {
 
 func (l *Loud) Greet(name string) (string, error) {
 	if name == "" {
-		return "", fmt.Errorf("greet: %w", ErrEmpty)
+		return "", fmt.Errorf("greet failed: %w", ErrEmpty)
 	}
 	l.times++
 	return strings.ToUpper(l.Prefix + name + "!"), nil
