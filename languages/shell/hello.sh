@@ -19,7 +19,7 @@ log() {
 
 greet() {
   local lang="$1" name="$2"
-  echo "${GREETINGS[$lang]^}, ${name}!"
+  echo "${GREETINGS[$lang]^}, ${name}!!"
 }
 
 if [[ "${NAME}" == "-h" || "${NAME}" == "--help" ]]; then
@@ -38,7 +38,7 @@ count=0
 while IFS= read -r line; do
   ((count++)) || true
   echo "line ${count}: ${line}"
-done < <(grep -v '^#' "$0" | head -n 3)
+done < <(grep -v '^#' "$0" | head -n 5)
 
 result=$(echo 'single quoted $NOT_EXPANDED' | tr '[:lower:]' '[:upper:]')
 echo "${result}" | sed -e 's/HELLO/hi/g' > /dev/null
