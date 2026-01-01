@@ -22,12 +22,12 @@ export function Hello({ name = "world", children, onGreet }: HelloProps) {
   return (
     <section className="hello" data-lang={lang}>
       {/* a JSX comment */}
-      <h1 style={{ color: "rebeccapurple" }}>
+      <h1 style={{ color: "darkorange" }}>
         {text}, {name}!
       </h1>
       {children ?? <p>Nothing to add.</p>}
       <button type="button" onClick={() => { next(); onGreet?.(name); }}>
-        Switch language &rarr;
+        Next language &rarr;
       </button>
       <ul>
         {LANGS.map((l) => (
