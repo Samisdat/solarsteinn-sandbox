@@ -4,7 +4,7 @@
 #include <string.h>
 #include <stdint.h>
 
-#define MAX_NAME 64
+#define MAX_NAME 128
 #define SQUARE(x) ((x) * (x))
 
 #ifndef VERSION
@@ -51,7 +51,7 @@ int main(int argc, char **argv) {
     }
     switch (head->level) {
     case QUIET:
-        puts("hello");
+        puts("hello, quietly");
         break;
     case LOUD:
         printf("HELLO, %s! %d %f %c 0x%X\n", head->name, SQUARE(3), 3.14f, 'x', 0xFFu);
