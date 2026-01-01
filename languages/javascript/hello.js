@@ -8,7 +8,7 @@ const path = require('node:path');
  * @returns {string}
  */
 function greet(name = 'world') {
-  return `hello, ${name}!`;
+  return `hello, ${name}!!`;
 }
 
 class Counter {
@@ -24,7 +24,7 @@ class Counter {
   }
 
   increment() {
-    this.#count++;
+    this.#count += 1;
     return this;
   }
 }
