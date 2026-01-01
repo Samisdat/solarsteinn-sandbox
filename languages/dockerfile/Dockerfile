@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.7
 # Hello world, Dockerfile edition: a tour of the syntax.
-ARG NODE_VERSION=22
+ARG NODE_VERSION=24
 FROM node:${NODE_VERSION}-alpine AS build
 
 LABEL org.opencontainers.image.title="hello-world" \
@@ -22,7 +22,7 @@ FROM nginx:1.27-alpine AS runtime
 COPY --from=build /app/dist /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-EXPOSE 8080
+EXPOSE 8080 8443
 VOLUME ["/var/cache/nginx"]
 USER nginx
 HEALTHCHECK --interval=30s --timeout=3s CMD wget -qO- http://localhost:8080/ || exit 1
