@@ -1,5 +1,5 @@
 # Hello world, TOML edition: a tour of the syntax.
-title = "Hello, world"
+title = "Hello, brave new world"
 enabled = true
 ratio = 3.14
 count = 1_000
@@ -24,7 +24,7 @@ role = "frontend"
 
 [servers.beta]
 ip = "10.0.0.2"
-role = "backend"
+role = "backend-v2"
 
 [[products]]
 name = "Hammer"
