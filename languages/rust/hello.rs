@@ -21,7 +21,7 @@ impl fmt::Display for Error {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         match self {
             Error::Empty => write!(f, "empty greeting"),
-            Error::TooLong(n) => write!(f, "greeting too long: {n} bytes"),
+            Error::TooLong(n) => write!(f, "greeting too long: {n} bytes (limit 255)"),
         }
     }
 }
@@ -46,7 +46,7 @@ fn validate(text: &str) -> Result<&str, Error> {
     }
 }
 
-const MAX: u64 = 1_000_000;
+const MAX: u64 = 2_000_000;
 static NAME: &str = "world\t\"quoted\"\n";
 
 fn main() {
