@@ -3,7 +3,7 @@
 @use "sass:map";
 
 $accent: #663399 !default;
-$gap: 1rem;
+$gap: 1.5rem;
 $breakpoints: (
   "small": 40em,
   "large": 64em,
@@ -35,7 +35,7 @@ $breakpoints: (
     &:hover { color: darken($accent, 10%); }
   }
 
-  &--loud { text-transform: uppercase; }
+  &--loud { text-transform: uppercase; letter-spacing: 0.05em; }
 
   @include respond("large") {
     padding: $gap * 2;
