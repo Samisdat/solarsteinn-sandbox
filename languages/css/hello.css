@@ -3,7 +3,7 @@
 @import url("https://example.com/reset.css");
 
 :root {
-  --accent: #663399;
+  --accent: #0a7d5a;
   --gap: 1rem;
   --font: "Helvetica Neue", Arial, sans-serif;
 }
@@ -36,7 +36,7 @@ body {
 a:not([href^="http"]):hover,
 a:focus-visible {
   text-decoration: underline dotted;
-  transition: color 150ms ease-in-out;
+  transition: color 250ms ease-out;
 }
 
 @media (min-width: 40em) and (prefers-color-scheme: dark) {

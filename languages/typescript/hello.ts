@@ -18,7 +18,7 @@ enum Level {
 }
 
 const greetings: Record<Lang, Greeting<Lang>> = {
-  en: { lang: "en", text: "hello" },
+  en: { lang: "en", text: "hello there" },
   de: { lang: "de", text: "hallo" },
   fr: { lang: "fr", text: "bonjour", times: 2 },
 };
@@ -37,7 +37,7 @@ class Loud extends Speaker<Greeting> {
 
   constructor(name: string) {
     super(name);
-    Loud.#count++;
+    Loud.#count += 1;
   }
 
   speak({ text, times = 1 }: Greeting): string {
