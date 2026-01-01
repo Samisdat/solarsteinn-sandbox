@@ -14,6 +14,10 @@ defaults: &defaults
   timeout: 30s
 
 greetings:
+  ja: こんにちは世界
+  ar: مرحبا بالعالم
+  hi: नमस्ते दुनिया
+  emoji: "👋🌍 é"
   en: "Hello, world!"
   de: 'Hallo, Welt!'
   fr: Bonjour, le monde !
