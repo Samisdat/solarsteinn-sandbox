@@ -33,7 +33,7 @@ fn main() {
 
 See [the docs](https://example.com/docs "Docs") or <https://example.com>.
 
-![alt text](https://example.com/logo.png)
+![alt text](logo.png)
 
 [ref]: https://example.com/ref
 
