@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS greetings (
     id         BIGSERIAL PRIMARY KEY,
     lang       VARCHAR(8)  NOT NULL DEFAULT 'en',
     text       TEXT        NOT NULL,
-    times      INTEGER     NOT NULL CHECK (times >= 0),
+    times      INTEGER     NOT NULL CHECK (times >= 0 AND times < 1000),
     created_at TIMESTAMPTZ NOT NULL DEFAULT now(),
     UNIQUE (lang, text)
 );
@@ -34,7 +34,7 @@ WHERE rn = 1
 GROUP BY lang
 HAVING COUNT(*) >= 1
 ORDER BY total DESC, lang
-LIMIT 10 OFFSET 0;
+LIMIT 20 OFFSET 0;
 
 UPDATE greetings SET times = times + 1 WHERE lang IN ('en', 'de') AND id > 0;
 
