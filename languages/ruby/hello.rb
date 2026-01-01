@@ -5,10 +5,10 @@ require 'json'
 require 'set'
 
 module Greeter
-  VERSION = '1.0.0'
+  VERSION = '1.1.0'
 
   def greet(name = 'world')
-    "hello, #{name}!"
+    "hello, #{name}!!"
   end
 end
 
