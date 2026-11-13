@@ -5,10 +5,12 @@ A throwaway test bed for [solarsteinn](https://github.com/Samisdat/solarsteinn):
 to review. Nothing here is real.
 
 ```sh
-solarsteinn https://github.com/Samisdat/solarsteinn-sandbox/pull/<N> --log ~/.solarsteinn/sandbox.jsonl
+git clone https://github.com/Samisdat/solarsteinn-sandbox && cd solarsteinn-sandbox
+solarsteinn review --log ~/.solarsteinn/sandbox.jsonl   # pick one of the open PRs
 ```
 
-Use a separate, disposable log: PR numbers change when the pool is refilled.
+`solarsteinn review` works on the repository you are in, through `gh`. Use a separate, disposable log:
+PR numbers change when the pool is refilled.
 
 ## How it works
 
