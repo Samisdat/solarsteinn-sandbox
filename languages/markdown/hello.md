@@ -8,6 +8,7 @@ A tour of the *Markdown* syntax with **bold**, ~~strikethrough~~ and `inline cod
 - two
   - nested
 - three
+- four
 
 1. first
 2. second
@@ -41,6 +42,7 @@ See [the docs](https://example.com/docs "Docs") or <https://example.com>.
 |----------|----------|
 | English  | Hello    |
 | German   | Hallo    |
+| Spanish  | Hola     |
 
 ---
 
