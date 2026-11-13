@@ -1,0 +1,54 @@
+/* Hello world, CSS edition: a tour of the syntax. */
+@charset "utf-8";
+@import url("https://example.com/reset.css");
+
+:root {
+  --accent: #663399;
+  --gap: 1rem;
+  --font: "Helvetica Neue", Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: 16px/1.5 var(--font);
+  color: rgb(34 34 34 / 90%);
+  background: linear-gradient(to bottom, #fff 0%, #f5f5f5 100%);
+}
+
+.hello {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: calc(var(--gap) * 2);
+  padding: var(--gap);
+}
+
+.hello > h1:first-child::after {
+  content: "!";
+  color: var(--accent);
+}
+
+a:not([href^="http"]):hover,
+a:focus-visible {
+  text-decoration: underline dotted;
+  transition: color 150ms ease-in-out;
+}
+
+@media (min-width: 40em) and (prefers-color-scheme: dark) {
+  body { color: #eee; background: #111; }
+}
+
+@keyframes wave {
+  from { transform: rotate(0deg); }
+  50%  { transform: rotate(20deg); }
+  to   { transform: rotate(0deg); }
+}
+
+@supports (container-type: inline-size) {
+  .card { container-type: inline-size; animation: wave 2s infinite !important; }
+}

@@ -1,0 +1,37 @@
+name: reconcile
+
+on:
+  schedule:
+    - cron: "0 3 * * *" # nightly, 03:00 UTC
+  workflow_dispatch:
+  push:
+    branches: [control]
+    paths: [seed/**, scenarios/**, scripts/**, .github/workflows/**]
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+concurrency:
+  group: reconcile
+  cancel-in-progress: false
+
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: control
+          fetch-depth: 0
+      - name: Refill the pool
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: scripts/reconcile.sh
+      - name: Keep the schedule alive
+        # Public repos lose scheduled workflows after 60 days without repo activity.
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow enable reconcile.yml --repo "$GITHUB_REPOSITORY" || true

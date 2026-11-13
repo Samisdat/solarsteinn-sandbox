@@ -1,0 +1,2 @@
+Hello, world! This file has an extension no highlighter knows.
+function nothing() { return "plain text"; }

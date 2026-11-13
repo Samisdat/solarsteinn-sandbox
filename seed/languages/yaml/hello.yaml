@@ -1,0 +1,43 @@
+# Hello world, YAML edition: a tour of the syntax.
+---
+name: hello-world
+version: 1.0.0
+enabled: true
+legacy: no
+parent: ~
+ratio: 3.14
+port: 0x1F90
+started: 2026-01-01T12:00:00Z
+
+defaults: &defaults
+  retries: 3
+  timeout: 30s
+
+greetings:
+  en: "Hello, world!"
+  de: 'Hallo, Welt!'
+  fr: Bonjour, le monde !
+
+services:
+  web:
+    <<: *defaults
+    image: nginx:1.27
+    ports: [80, 443]
+    env:
+      - KEY=value
+      - OTHER="quoted value"
+  worker:
+    <<: *defaults
+    command: ["node", "worker.js", "--verbose"]
+
+description: |
+  A literal block scalar.
+  Newlines are kept.
+
+folded: >
+  A folded block scalar
+  joins these lines.
+
+? complex key
+: complex value
+...
