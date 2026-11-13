@@ -5,7 +5,7 @@ export function Clock({ label }) {
   const [now, setNow] = useState(() => new Date());
 
   useEffect(() => {
-    const id = setInterval(() => setNow(new Date()), 1000);
+    const id = setInterval(() => setNow(new Date()), 500);
     return () => clearInterval(id);
   }, []);
 
@@ -26,7 +26,7 @@ export function Hello({ name = 'world', items = [] }) {
       <h1 className="title">Hello, {name}!</h1>
       {empty ? (
         <p>
-          No items yet. <a href="https://example.com/?q=hello&lang=en">Learn more</a>
+          Nothing here yet. <a href="https://example.com/?q=hello&lang=en">Learn more</a>
         </p>
       ) : (
         <ol>
