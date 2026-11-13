@@ -10,7 +10,7 @@ port: 0x1F90
 started: 2026-01-01T12:00:00Z
 
 defaults: &defaults
-  retries: 3
+  retries: 5
   timeout: 30s
 
 greetings:
@@ -21,7 +21,7 @@ greetings:
 services:
   web:
     <<: *defaults
-    image: nginx:1.27
+    image: nginx:1.28
     ports: [80, 443]
     env:
       - KEY=value
