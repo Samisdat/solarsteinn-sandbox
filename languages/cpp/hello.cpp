@@ -9,7 +9,7 @@
 
 namespace hello {
 
-constexpr int kMax = 1'000;
+constexpr int kMax = 10'000;
 
 template <typename T>
 concept Printable = requires(T t, std::ostream& os) { os << t; };
@@ -44,7 +44,7 @@ void print_all(const std::vector<T>& xs) {
 }  // namespace hello
 
 int main() {
-    auto speaker = std::make_unique<hello::Loud>("hello, ");
+    auto speaker = std::make_unique<hello::Loud>("hello there, ");
     std::map<std::string, int> counts{{"en", 1}, {"de", 2}};
     auto lambda = [&counts](const std::string& k) -> int { return counts.at(k); };
     std::vector<std::string> names{"world", "welt"};
