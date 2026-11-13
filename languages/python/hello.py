@@ -8,7 +8,7 @@ from dataclasses import dataclass, field
 from typing import Iterator, Protocol
 
 PATTERN = re.compile(r"^h(?P<rest>ello)\s+\w+$", re.IGNORECASE)
-LIMIT = 1_000
+LIMIT = 5_000
 
 
 class Speaker(Protocol):
@@ -22,7 +22,7 @@ class Greeting:
     tags: list[str] = field(default_factory=list)
 
     def speak(self) -> str:
-        return f"{self.text.upper()}! ({self.lang!r})"
+        return f"{self.text.upper()}!! ({self.lang!r})"
 
 
 def countdown(n: int) -> Iterator[int]:
